@@ -14,7 +14,7 @@ import os
 # API call to openAI
 #from typing import List
 
-openai.organization = "org-fH9F3VZEWvBphHnp3ixuJkqN"  # Get this from openai
+#openai.organization = "org-fH9F3VZEWvBphHnp3ixuJkqN"  # org-fH9F3VZEWvBphHnp3ixuJkqN Get this from openai
 openai.api_key = st.secrets["api_token"]   # Get this from openai
 
 
