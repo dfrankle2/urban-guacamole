@@ -79,7 +79,7 @@ knowledge_jsonl = os.path.join(filepath, jsonlname)
 if button:
     response_json = openai.Answer.create(
         search_model="ada",
-        model="text-curie-001",
+        model="text-davinci-002",
         question=question,
       #  question="I am a highly intelligent question answering bot. If you ask me a question that is rooted in truth, I will give you the answer. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with \"Unknown\".\n\nQ: What do Peons do?\nA: Peons are worker processes that execute submitted tasks.\n\nQ: What are some issues with enhanced IP in Druid?\nA: There are some issues with enhanced IP in Druid that can affect query execution. These issues can include:\n\nNot being able to connect to the data server\nThe data server not being able to connect to the coordinator\nThe data server not having the correct data\n\nQ: What is Druid?\nA: Druid is a data store that is used to store data for analysis.\n\nQ: What is the square root of banana?\nA: Unknown\n\nQ: What are the benefits of columnar storage?\nA: Columnar storage formats are highly optimized for linear scans, meaning that they can quickly scan through all the data in a column. This makes them a good choice for analytics applications.\n\nQ: Why doesn't Druid support JOINs?\nA: Druid doesn't support JOINs because they can be expensive and can slow down your queries.\n\nQ: How many squigs are in a bonk?\nA: Unknown" + question,
         temperature=0,
@@ -89,7 +89,7 @@ if button:
         max_rerank=100,
         max_tokens=320,
         n=1,
-        stop=["<|endoftext|>"]
+        stop=[""]
     )
 
     # Return answer to UI
