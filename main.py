@@ -89,7 +89,7 @@ if button:
         max_rerank=100,
         max_tokens=320,
         n=1,
-        stop=[""]
+        stop=["<|endoftext|>"]
     )
 
     # Return answer to UI
