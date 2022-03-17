@@ -34,7 +34,7 @@ button = st.button("Ask me")
 filepath = r"/Users/dfrankle/downloads/"
 jsonlname = "knowledge_jsonl.jsonl"  # Do not change
 knowledge_jsonl = os.path.join(filepath, jsonlname)
-knowledge = os.path.join(filepath, kf_name)
+#knowledge = os.path.join(filepath, kf_name)
 
 # Process knowledge file
 #if getfile:
