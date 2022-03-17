@@ -23,9 +23,9 @@ st.markdown('# 🤖 *Sandy*, The Expert AWS BOT')
 st.header('Sandy will answer relevant questions about Machine Learning and EC2 on AWS')
  #                        max_chars=120,
   #                       placeholder= "knowledge_ESG.txt")
-kf_name = st.text_input(label="Knowledge base",
-                         max_chars=120,
-                         placeholder= "knowledge_ESG.txt")
+#kf_name = st.text_input(label="Knowledge base",
+              #           max_chars=120,
+              #           placeholder= "knowledge_ESG.txt")
 #getfile = st.button("Acquire Knowledge")
 question = st.text_area('Questions..')
 button = st.button("Ask me")
