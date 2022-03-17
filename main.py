@@ -15,7 +15,7 @@ import os
 #from typing import List
 
 openai.organization = "org-fH9F3VZEWvBphHnp3ixuJkqN"  # Get this from openai
-openai.api_key = "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"  # Get this from openai
+openai.api_key = st.secrets["api_token"]   # Get this from openai
 
 
 # Set up bot interface with streamlit
